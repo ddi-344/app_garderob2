@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe — Галерея образов</title>
+    <link rel="icon" href="icon.jpg" type="jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Кнопка переключения темы -->
+  <button class="theme-toggle" onclick="document.body.classList.toggle('dark')">
+    🌓 Тема
+</button>
+
+
+    <!-- Шапка  -->
+    <header class="site-header">
+   <h1 class="logo">👠Wardrobe</h1>
+        <nav class="main-nav">
+            <a href="#obrazi">Образы</a>
+            <a href="#favourites">♡</a>
+              <a href="#contact">📞</a>
+              <button type="button">Войти</button>
+<button type="button">Зарегистрироваться</button>
+        </nav>
+    </header>
+
+
+        <section class="obraz" id="obrazi">
+        <h2>Образы</h2>
+        <article class="card">
+            <span class="badge">NEW</span>
+        <img src="1.jpg"  alt="Образ1" >
+        </article>
+        <article class="card">
+     <img src="7.jpg"  alt="Образ2">
+      <label class="fav">
+<input type="checkbox">
+<span>В избранное</span>
+            </label>
+        </article>
+        <article class="card">
+           <img src="8.png"  alt="Образ3">
+        </article>
+        <article class="card">
+          <img src="5.png"  alt="Образ4">
+        </article>
+  <article class="card">
+          <img src="9.jpg"  alt="Образ5">
+        </article>
+          <article class="card">
+          <img src="10.jpg"  alt="Образ6">
+        </article>
+          <article class="card">
+          <img src="11.jpg"  alt="Образ7">
+        </article>
+          <article class="card">
+          <img src="12.jpg"  alt="Образ8" >
+        </article>
+        </section>
+
+        
+          <section class="favourites" id="favourites">
+        <h2>♡ Избранное</h2>
+        <h3>Ваши сохраненные идеи</h3>
+         <article class="card">
+        <img src="1.jpg"  alt="Образ1">
+        </article>
+           <article class="card">
+        <img src="14.jpg"  alt="Образ2">
+          </article>
+           <article class="card">
+        <img src="17.jpg"  alt="Образ3">
+        </article>
+      
+          </section>
+
+          <section class="layout">
+    <aside class="sidebar">
+        <h3>Информация</h3>
+        <p>Выберите куда вы собираетесь пойти, укажите погоду и температуру, а система выдаст вам несколько образов, подходящих для вас. Смотрите и вдохновляйтесь идеями, сохраняйте образы в избранное, чтобы потом было удобно найти то, что привлекло вас. </p>
+    </aside>
+    <main class="content">
+        <h2>Добавьте образ</h2>
+        <section class="add" id="add">
+      <label for="povod">Выберите повод</label>
+      <select id="povod" name="povod">
+        <option value="study">Учёба</option>
+        <option value="office">Работа/Офис</option>
+        <option value="walk">Прогулка</option>
+        <option value="date">Свидание</option>
+        <option value="party">Вечеринка</option>
+        <option value="sport">Спорт</option>
+        <option value="day">Повседневный</option>
+      </select>
+       <label for="temp">Укажите градусы на сегодня</label>
+      <input type="text" id="temp" name="temp" placeholder="+15°C" required>
+
+       <label for="weather">Укажите погоду</label>
+      <select id="weather" name="weather">
+        <option value="s">☀️Солнечно</option>
+        <option value="d">☔Дождливо</option>
+        <option value="v">💨Ветрено</option>
+        <option value="o">☁️Облачно</option>
+        <option value="sn">❄️Снежно</option>
+      </select>
+      <button type="submit">Создать образ</button>
+  </section>
+    </main>
+</section>
+
+
+
+
+          <section class="contact" id="contact">
+        <h2>Контакты</h2>
+       <ul class="contact-list">
+    <li>
+        <label for="email">📧Электронная почта:</label><br>
+        <a href="mailto:dashaabramova7144@gmail.com">dashaabramova7144@gmail.com</a>
+    </li>
+    <li>
+        <label for="tel">☎️Номер телефона:</label><br>
+        <a href="tel:+79990000000">+7 (999) 000-00-00</a>
+    </li>
+    <li>
+        <label for="max">MAX:</label><br>
+        <a href="https://max.ru/u/f9LHodD0cOIE2tq9cxrtm7-RPujnoVVnAPNoX505FSTqefhzV_apdRaKVHg" target="_blank">Написать в MAX</a>
+    </li>
+</ul>
+<form action="" method="post">
+<label for="soo">Оставьте отзыв или напишите свой вопрос:</label>
+<textarea name="Сообщение" rows="4" cols="40" placeholder="Напишите сообщение..." required></textarea>
+<button type="submit">Отправить</button></form>
+</section>
+
+
+          
+ <!-- Подвал -->
+    <footer class="site-footer">
+        <p>© 2026 Wardrobe. Все права защищены.</p>
+    </footer>
+
+<!-- Нижняя навигация  -->
+    <nav class="bottom-nav">
+          <!-- Левая кнопка: Домой -->
+        <a href="#obrazi" class="nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+       
+        <!-- Центральная кнопка: Плюс -->
+      <a href="#add" class="nav-item button">
+    <span class="nav-icon-plus">+</span>
+</a>
+
+        <!-- Правая кнопка: Профиль -->
+        <a href="#profile">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Profile</span>
+        </a>
+    </nav>
+
+
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-top">↑</a>
+
+</body>
+</html>
